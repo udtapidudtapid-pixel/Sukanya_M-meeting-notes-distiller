@@ -41,7 +41,7 @@ npm run start        # http://localhost:3000
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm test` | unit test (Vitest) — 42 tests |
 | `npm run test:watch` | unit test แบบ watch |
-| `npm run test:e2e` | E2E (Playwright) — ต้องรัน `npx playwright install` ครั้งแรก |
+| `npm run test:e2e` | ผ่าน 5 scenario (36.9s) |
 | `npm run verify` | typecheck + unit test + build (ใช้ก่อนถือว่างานเสร็จ) |
 
 ---
