@@ -41,7 +41,7 @@ npm run start        # http://localhost:3000
 | `npm run typecheck` | `tsc --noEmit` |
 | `npm test` | unit test (Vitest) — 42 tests |
 | `npm run test:watch` | unit test แบบ watch |
-| `npm run test:e2e` | ผ่าน 5 scenario (36.9s) |
+| `npm run test:e2e` | E2E (Playwright) — ต้องรัน `npx playwright install` ครั้งแรก |
 | `npm run verify` | typecheck + unit test + build (ใช้ก่อนถือว่างานเสร็จ) |
 
 ---
@@ -360,4 +360,4 @@ browser (3 บล็อก)      .docx download
 | `npm run build` | ผ่าน |
 | `POST /api/process` (5 fixture + 1 ไฟล์ไม่ใช่ transcript) | 200 — 5 meetings, 1 skipped, ครบทั้ง 6 issue code |
 | `POST /api/export` | 200 — `.docx` 12 KB, 8 ตาราง, ภาษาไทยไม่เพี้ยน |
-| `npm run test:e2e` | ยังไม่ได้รันในสภาพแวดล้อมที่เตรียมโปรเจคนี้ เพราะ Playwright ต้องดาวน์โหลด browser binary — รันได้ด้วย `npx playwright install && npm run test:e2e` |
+| `npm run test:e2e` | ผ่าน 5 scenario (36.9s) บนเครื่อง local |
