@@ -1,0 +1,12 @@
+{
+  "title": "Vendor Contract Review",
+  "date": "2026-08-22",
+  "participants": ["Deepak", "Mei Ling", "สุริยา"],
+  "transcript": [
+    { "speaker": "Deepak", "ts": "00:00:05", "topic": "Pricing", "text": "The vendor quoted a 12 percent increase this year." },
+    { "speaker": "Mei Ling", "ts": "00:01:10", "topic": "Pricing", "text": "We agreed to counter at 6 percent." },
+    { "speaker": "สุริยา", "ts": "00:02:00", "topic": "Pricing", "text": "Action item: assigned to Deepak - send the counter offer, due 2026-08-27." },
+    { "speaker": "Mei Ling", "ts": "00:03:00", "topic": "Contract dates", "text": "Action: Deepak will confirm the release date by 2026-09-10." },
+    { "speaker": "Deepak", "ts": "00:03:30", "topic": "Contract dates", "text": "Action item: Deepak to lock the release date due 2026-09-30." }
+  ]
+}
