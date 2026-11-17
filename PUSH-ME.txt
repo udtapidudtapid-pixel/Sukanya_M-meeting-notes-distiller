@@ -1,0 +1,40 @@
+วิธี push ขึ้น GitHub (ทำครั้งเดียว)
+=====================================
+
+โฟลเดอร์นี้มี git repo พร้อมแล้ว ตั้ง remote และ branch ไว้ให้เรียบร้อย
+ไม่ต้อง git init ใหม่ ไม่ต้อง git add ไม่ต้อง commit
+
+เปิด Terminal / Git Bash แล้วเข้ามาในโฟลเดอร์นี้ จากนั้นรันบรรทัดเดียว:
+
+    git push -u origin main --force
+
+
+ถ้าถาม username/password ให้ใส่:
+    username = udtapidudtapid-pixel
+    password = Personal Access Token (ไม่ใช่รหัสผ่าน GitHub)
+
+วิธีสร้าง token: GitHub > Settings > Developer settings >
+Personal access tokens > Tokens (classic) > Generate new token
+เลือก scope "repo" แล้ว copy มาใส่ตรงช่อง password
+
+
+ตรวจหลัง push เสร็จ
+--------------------
+    git ls-files | wc -l
+
+ต้องได้ 51
+
+แล้วเปิดหน้า repo ต้องเห็นโฟลเดอร์ src, tests, docs, e2e
+ส่วน .claude GitHub ไม่โชว์ในหน้าแรก ให้เปิด URL นี้เช็ค:
+https://github.com/udtapidudtapid-pixel/Sukanya_M-meeting-notes-distiller/tree/main/.claude/skills
+
+
+รันโปรเจค
+----------
+    npm install
+    npm run dev          แล้วเปิด http://localhost:3000
+
+    npm run verify       typecheck + 42 unit tests + build
+
+    npx playwright install
+    npm run test:e2e     E2E (ยังไม่เคยรัน ควรรันก่อนส่ง)
